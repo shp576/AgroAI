@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('C:/Users/hipra/Downloads/_844c5b99-4e6e-4780-a804-394c2917a1e4.jpeg');
+    background-size: 1500px 900px; /* Adjusted background size */
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    animation: flyIn 1.5s ease forwards;
+}
+
+.title {
+    font-size: 3rem;
+    color: #0c542a; /* White color */
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #0c542a; /* White color */
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White color */
+    font-size: 1.2rem;
+}
+
+/* Fly-in animation */
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Move up by 50px */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move back to original position */
+    }
+}

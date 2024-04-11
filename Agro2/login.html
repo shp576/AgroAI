@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroAI - Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('pic.jpeg'); /* Specify the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Ensures that the background image covers the entire viewport height */
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            color: black;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Welcome to AgroAI</h1>
+        <p>Your AI buddy for excellent agricultural advice and analysis!!</p>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state" required>
+                            <option value="">Select State</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <!-- Add more options for other states -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="acres">Number of Acres of Land</label>
+                        <input type="text" id="acres" name="acres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="crop">Major Crop Sown</label>
+                        <input type="text" id="crop" name="crop" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <p id="message"></p>
+            </div>
+        </section>
+    </main>
+
+   
+</body>
+</html>
